@@ -1,0 +1,4 @@
+west:
+  command: /home/home/zephyrproject/.venv/bin/west build -b esp32c6_devkitc/esp32c6/hpcore
+  topdir: /home/home/zephyrproject
+  version: 1.5.0

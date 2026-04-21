@@ -1,0 +1,81 @@
+menu "acpica (/home/home/zephyrproject/modules/lib/acpica)"
+osource "$(ZEPHYR_ACPICA_KCONFIG)"
+config ZEPHYR_ACPICA_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis (/home/home/zephyrproject/modules/hal/cmsis)"
+osource "$(ZEPHYR_CMSIS_KCONFIG)"
+config ZEPHYR_CMSIS_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis-dsp (/home/home/zephyrproject/modules/lib/cmsis-dsp)"
+osource "$(ZEPHYR_CMSIS_DSP_KCONFIG)"
+config ZEPHYR_CMSIS_DSP_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis-nn (/home/home/zephyrproject/modules/lib/cmsis-nn)"
+osource "$(ZEPHYR_CMSIS_NN_KCONFIG)"
+config ZEPHYR_CMSIS_NN_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis_6 (/home/home/zephyrproject/modules/hal/cmsis_6)"
+osource "$(ZEPHYR_CMSIS_6_KCONFIG)"
+config ZEPHYR_CMSIS_6_MODULE
+	bool
+	default y
+endmenu
+menu "dhara (/home/home/zephyrproject/modules/lib/dhara)"
+osource "$(ZEPHYR_DHARA_KCONFIG)"
+config ZEPHYR_DHARA_MODULE
+	bool
+	default y
+endmenu
+menu "fatfs (/home/home/zephyrproject/modules/fs/fatfs)"
+osource "$(ZEPHYR_FATFS_KCONFIG)"
+config ZEPHYR_FATFS_MODULE
+	bool
+	default y
+endmenu
+config ZEPHYR_ADI_MODULE
+	bool
+	default y
+menu "hal_afbr (/home/home/zephyrproject/modules/hal/afbr)"
+osource "$(ZEPHYR_HAL_AFBR_KCONFIG)"
+config ZEPHYR_HAL_AFBR_MODULE
+	bool
+	default y
+
+config ZEPHYR_HAL_AFBR_MODULE_BLOBS
+	bool
+endmenu
+menu "hal_ambiq (/home/home/zephyrproject/modules/hal/ambiq)"
+osource "$(ZEPHYR_HAL_AMBIQ_KCONFIG)"
+config ZEPHYR_HAL_AMBIQ_MODULE
+	bool
+	default y
+endmenu
+config ZEPHYR_ATMEL_MODULE
+	bool
+	default y
+menu "hal_bouffalolab (/home/home/zephyrproject/modules/hal/bouffalolab)"
+osource "$(ZEPHYR_HAL_BOUFFALOLAB_KCONFIG)"
+config ZEPHYR_HAL_BOUFFALOLAB_MODULE
+	bool
+	default y
+
+config ZEPHYR_HAL_BOUFFALOLAB_MODULE_BLOBS
+	bool
+endmenu
+menu "hal_espressif (/home/home/zephyrproject/modules/hal/espressif)"
+osource "$(ZEPHYR_HAL_ESPRESSIF_KCONFIG)"
+config ZEPHYR_HAL_ESPRESSIF_MODULE
+	bool
+	default y
+
+config ZEPHYR_HAL_ESPRESSIF_MODULE_BLOBS
+	bool
+endmenu

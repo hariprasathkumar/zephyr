@@ -1,0 +1,51 @@
+cmake:
+  application:
+    configuration-dir: '/home/home/zephyrproject/zephyr/samples/hello_world_hari'
+    source-dir: '/home/home/zephyrproject/zephyr/samples/hello_world_hari'
+  board:
+    name: 'esp32c6_devkitc'
+    path:
+     - '/home/home/zephyrproject/zephyr/boards/espressif/esp32c6_devkitc'
+    qualifiers: 'esp32c6/hpcore'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/home/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/home/zephyrproject/zephyr/boards/espressif/esp32c6_devkitc/esp32c6_devkitc_hpcore.dts'
+    include-dirs:
+     - '/home/home/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/home/zephyrproject/modules/hal/atmel/include'
+     - '/home/home/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/home/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/home/zephyrproject/zephyr/include'
+     - '/home/home/zephyrproject/zephyr/include/zephyr'
+     - '/home/home/zephyrproject/zephyr/dts/common'
+     - '/home/home/zephyrproject/zephyr/dts/vendor'
+     - '/home/home/zephyrproject/zephyr/dts/rx'
+     - '/home/home/zephyrproject/zephyr/dts/x86'
+     - '/home/home/zephyrproject/zephyr/dts/xtensa'
+     - '/home/home/zephyrproject/zephyr/dts/sparc'
+     - '/home/home/zephyrproject/zephyr/dts/riscv'
+     - '/home/home/zephyrproject/zephyr/dts/posix'
+     - '/home/home/zephyrproject/zephyr/dts/arm64'
+     - '/home/home/zephyrproject/zephyr/dts/arm'
+     - '/home/home/zephyrproject/zephyr/dts/arc'
+     - '/home/home/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/home/zephyrproject/zephyr/boards/espressif/esp32c6_devkitc/esp32c6_devkitc_hpcore_defconfig'
+     - '/home/home/zephyrproject/zephyr/samples/hello_world_hari/prj.conf'
+    user-files:
+     - '/home/home/zephyrproject/zephyr/samples/hello_world_hari/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/home/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/home/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/home/zephyrproject/.venv/bin/west build -b esp32c6_devkitc/esp32c6/hpcore'
+  topdir: '/home/home/zephyrproject'
+  version: '1.5.0'
