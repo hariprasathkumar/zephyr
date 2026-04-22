@@ -1,1 +1,1 @@
-# zephyr
+# zephyr, esp32c6_devkitc/esp32c6/hpcore
